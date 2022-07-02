@@ -1,0 +1,146 @@
+.geo-phone-container {
+	position: relative;
+	width: 100%;
+
+	input:-webkit-autofill {
+		-webkit-box-shadow: 0 0 0 30px #0d1020 inset;
+		-webkit-text-fill-color: #ecf1f6;
+	}
+
+	.PhoneInput {
+		background: #0d1020;
+		border-width: 2px;
+		border-color: #232739;
+		color: #ffff;
+		border-radius: 4px;
+		padding-right: 8px;
+
+		& input {
+			height: 100%;
+		}
+
+		& .PhoneInputCountry select {
+			background-color: #0d1020;
+
+			& option {
+				background-color: #0d1020;
+			}
+		}
+	}
+	.PhoneInputInput {
+		background: #0d1020;
+		border: none;
+		color: #ffff;
+	}
+
+	& div {
+		line-height: 21px;
+	}
+
+	&-input-xl {
+		.PhoneInput {
+			height: 60px;
+
+			.PhoneInputCountry {
+				margin-left: 4px;
+			}
+
+			& input {
+				padding: 2px 4px;
+				font-size: 16px;
+				line-height: 28px;
+			}
+		}
+	}
+
+	&-input-lg {
+		.PhoneInput {
+			height: 48px;
+
+			.PhoneInputCountry {
+				margin-left: 4px;
+			}
+
+			& input {
+				padding: 2px 4px;
+				font-size: 16px;
+				line-height: 24px;
+			}
+		}
+
+		p.err-msg {
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+
+	&-input-md {
+		.PhoneInput {
+			height: 40px;
+
+			.PhoneInputCountry {
+				margin-left: 4px;
+			}
+
+			& input {
+				padding: 2px 4px;
+				font-size: 14px;
+				line-height: 20px;
+			}
+		}
+
+		p.err-msg {
+			font-size: 12px;
+			line-height: 16px;
+		}
+	}
+
+	&-input-sm {
+		.PhoneInput {
+			height: 38px;
+
+			.PhoneInputCountry {
+				margin-left: 4px;
+			}
+
+			& input {
+				padding: 2px 4px;
+				font-size: 14px;
+				line-height: 20px;
+			}
+		}
+
+		p.err-msg {
+			font-size: 12px;
+			line-height: 16px;
+		}
+	}
+
+	.PhoneInputInput:focus {
+		outline: 2px solid transparent;
+		border-width: 1px;
+		border-radius: 2px;
+		outline-offset: 2px;
+		--tw-ring-inset: var(--tw-empty);
+		--tw-ring-offset-width: 0px;
+		--tw-ring-offset-color: #fff;
+		--tw-ring-color: #6875f5;
+		--tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+		--tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+		box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+		border-color: #6875f5;
+	}
+
+	.PhoneInputInput:-webkit-autofill {
+		-webkit-box-shadow: 0 0 0px 1000px #0d1020 inset;
+	}
+
+	&.error {
+		.PhoneInput {
+			border-color: #ea4f49;
+			border-width: 1px;
+			border-radius: 2px;
+			--tw-ring-color: rgba(234, 79, 73, 1);
+		}
+	}
+}

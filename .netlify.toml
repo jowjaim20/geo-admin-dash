@@ -1,0 +1,9 @@
+[build]
+  command = "CI='' npm run build-staging"
+  publish = "build"
+  environment = { NODE_VERSION = "14.19.1" }
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

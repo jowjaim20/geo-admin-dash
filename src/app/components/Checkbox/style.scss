@@ -1,0 +1,63 @@
+.geo-checkbox-container {
+	input[type='checkbox']:disabled {
+		cursor: pointer;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		outline: 0;
+		background: transparent;
+	}
+
+	input[type='checkbox']:hover {
+		filter: brightness(90%);
+	}
+
+	input[type='checkbox']:disabled {
+		background: #e6e6e6;
+		opacity: 0.6;
+		pointer-events: none;
+	}
+
+	// input[type='checkbox']:after {
+	// content: ' ';
+	// position: relative;
+	// left: 40%;
+	// top: 15%;
+	// width: 30%;
+	// height: 50%;
+	// border: solid #fff;
+	// border-width: 0 1px 1px 0;
+	// transform: rotate(50deg);
+	// display: none;
+	// }
+
+	// input[type='checkbox']:checked:after {
+	// 	display: block;
+	// }
+
+	// input[type='checkbox']:disabled:after {
+	// 	border-color: #7b7b7b;
+	// }
+
+	// label {
+	// 	margin: 0;
+	// 	span,
+	// 	a {
+	// 		font-size: 14px;
+	// 		line-height: 16px;
+	// 		color: #e8e8e8;
+	// 		margin-left: -8px;
+	// 		padding: 0;
+
+	// 		&:first-of-type {
+	// 			margin: 0px 5px 1px 0px;
+	// 		}
+	// 	}
+
+	// 	a {
+	// 		color: #fe895e;
+	// 		margin-left: 0;
+	// 		text-decoration: none;
+	// 	}
+	// }
+}

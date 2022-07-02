@@ -1,0 +1,137 @@
+.adbutton-container {
+	.btn-primary-base {
+		background-color: #9e3dff;
+
+		&:hover {
+			background-color: #822dd8;
+		}
+
+		&.disabled {
+			opacity: 20%;
+		}
+	}
+
+	.btn-primary-destructive {
+		background-color: #d92d20;
+
+		&:hover {
+			background-color: #b42318;
+		}
+
+		&.disabled {
+			opacity: 20%;
+		}
+	}
+
+	.btn-secondary-base {
+		color: #344054;
+		border: 1px solid #d0d5dd;
+
+		&:hover {
+			background-color: #f9fafb;
+			color: #1d2939;
+		}
+
+		&.disabled {
+			color: #d0d5dd;
+			border-color: #eaecf0;
+		}
+	}
+
+	.btn-secondary-destructive {
+		color: #b42318;
+		border: 1px solid #fda29b;
+
+		&:hover {
+			background-color: #fef3f2;
+			color: #912018;
+		}
+
+		&.disabled {
+			color: #fda29b;
+			border-color: #eaecf0;
+		}
+	}
+
+	.btn-tertiary {
+		color: #667085;
+		box-shadow: none;
+
+		&:hover {
+			background-color: #f9fafb;
+			color: #475467;
+		}
+
+		&.disabled {
+			color: #d0d5dd;
+		}
+	}
+
+	.btn-link-color {
+		color: #6941c6;
+		box-shadow: none;
+
+		&:hover {
+			color: #53389e;
+		}
+
+		&.disabled {
+			color: #d0d5dd;
+		}
+	}
+
+	.btn-link-gray {
+		color: #667085;
+		box-shadow: none;
+
+		&:hover {
+			color: #475467;
+		}
+
+		&.disabled {
+			color: #d0d5dd;
+		}
+	}
+
+	.btn-link-destructive {
+		color: #b42318;
+		box-shadow: none;
+
+		&:hover {
+			color: #912018;
+		}
+
+		&.disabled {
+			color: #fda29b;
+		}
+	}
+
+	.btn-sm {
+		height: 36px;
+	}
+
+	.btn-md {
+		height: 40px;
+	}
+
+	.btn-lg {
+		height: 44px;
+	}
+
+	.btn-xl {
+		height: 48px;
+	}
+
+	.btn-2xl {
+		height: 60px;
+	}
+
+	.square {
+		aspect-ratio: 1 / 1;
+		width: fit-content;
+	}
+
+	&:focus {
+		outline: none;
+	}
+}

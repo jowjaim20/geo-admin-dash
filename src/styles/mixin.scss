@@ -1,0 +1,9 @@
+@mixin scrollbar {
+	& .ps__rail-y {
+		width: 6px;
+
+		& .ps__thumb-y {
+			width: 2px;
+		}
+	}
+}

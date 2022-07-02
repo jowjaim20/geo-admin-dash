@@ -1,0 +1,20 @@
+.geo-checked-item {
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
+
+	&:last-of-type {
+		margin-bottom: 0px;
+	}
+
+	label {
+		font-size: 21px;
+		line-height: 20px;
+		color: #ffffff;
+	}
+
+	& > img {
+		margin-right: 10px;
+	}
+}

@@ -1,0 +1,18 @@
+pipelines:
+  branches:
+    production:
+      - step:
+          name: "Production Deployment"
+          image: node:14.18.1
+          script:
+            - mkdir -p ~/.ssh
+            - ssh-keyscan -t rsa $SSH_HOST_PROD > deploy_known_hosts
+            - cat deploy_known_hosts >> ~/.ssh/known_hosts
+            - (umask  077 ; echo $DEPLOY_SSH_KEY_PROD | base64 -di > ~/.ssh/id_rsa)
+            - npm i
+            - NODE_ENV=production npm run build
+            - ssh -i ~/.ssh/id_rsa $SSH_USER@$SSH_HOST_PROD 'rm -rf /home/ubuntu/geonode-admin-dashboard/*'
+            - scp -i ~/.ssh/id_rsa -r ./build/* $SSH_USER@$SSH_HOST_PROD:/home/ubuntu/geonode-admin-dashboard
+            - scp -i ~/.ssh/id_rsa -r ./deployment/nginx.conf $SSH_USER@$SSH_HOST_PROD:/home/ubuntu
+            - ssh -i ~/.ssh/id_rsa $SSH_USER@$SSH_HOST_PROD 'sudo cp /home/ubuntu/nginx.conf /etc/nginx/sites-available/default'
+            - ssh -i ~/.ssh/id_rsa $SSH_USER@$SSH_HOST_PROD 'sudo systemctl restart nginx'

@@ -1,0 +1,15 @@
+.geoDatepicker-wrapper {
+	.react-datepicker__input-container {
+		& .datepicker-sm {
+			height: 38px;
+		}
+
+		& .datepicker-md {
+			height: 40px;
+		}
+
+		& .datepicker-lg {
+			height: 44px;
+		}
+	}
+}

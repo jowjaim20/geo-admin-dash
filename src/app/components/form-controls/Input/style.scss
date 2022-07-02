@@ -1,0 +1,15 @@
+.inputContainer {
+	& .inputWrapper {
+		& .input-sm {
+			height: 38px;
+		}
+
+		& .input-md {
+			height: 40px;
+		}
+
+		& .input-lg {
+			height: 44px;
+		}
+	}
+}

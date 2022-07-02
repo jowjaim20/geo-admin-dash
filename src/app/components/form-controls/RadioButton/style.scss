@@ -1,0 +1,35 @@
+.radio {
+	&-wrapper {
+		display: flex;
+		& .form-radio {
+			&.sm {
+				width: 16px;
+				height: 16px;
+			}
+			&.md {
+				width: 18px;
+				height: 18px;
+			}
+			&.lg {
+				width: 20px;
+				height: 20px;
+			}
+		}
+	}
+
+	&-label {
+		&.sm {
+			font-size: 14px;
+			line-height: 20px;
+		}
+
+		&.md {
+			font-size: 16px;
+			line-height: 24px;
+		}
+		&.lg {
+			font-size: 17px;
+			line-height: 28px;
+		}
+	}
+}

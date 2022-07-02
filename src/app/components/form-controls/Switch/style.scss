@@ -1,0 +1,21 @@
+.geo-switch {
+	position: relative;
+	display: flex;
+	align-items: center;
+	label {
+		font-size: 16px;
+		line-height: 18px;
+		color: #e8e8e8;
+		padding-top: 3px;
+		& > span:first-of-type {
+			margin: 0 16px 0 11px;
+		}
+		& > span {
+			font-size: 15px;
+		}
+		span > span > span {
+			background: #ffffff;
+			border-radius: 50%;
+		}
+	}
+}

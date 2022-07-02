@@ -1,0 +1,47 @@
+@import '../../../../styles/mixin.scss';
+
+.geo-select-container {
+	position: relative;
+
+	.input-root {
+		background: transparent;
+		position: relative;
+		height: 100%;
+	}
+
+	.input-lg {
+		height: 44px;
+	}
+
+	.input-md {
+		height: 40px;
+	}
+	.input-sm {
+		height: 36px;
+	}
+
+	.input-wrapper.disabled {
+		border-color: #3b4057;
+		border-width: 2px;
+		span {
+			color: #4d5674;
+		}
+	}
+
+	p.err-msg {
+		color: #f04438;
+	}
+
+	ul {
+		position: absolute;
+		margin: 0;
+		width: 100%;
+		top: 100%;
+		.disabled-option {
+			background: #232739;
+		}
+		li.disabled-option:hover {
+			cursor: no-drop;
+		}
+	}
+}

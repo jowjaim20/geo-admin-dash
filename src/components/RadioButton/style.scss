@@ -1,0 +1,12 @@
+input[type="radio"] + label span {
+    transition: background .2s,
+      transform .2s;
+}
+
+input[type="radio"]:checked + label span {
+  border-color: #9E3DFF;
+}
+
+input[type="radio"]:checked + label span span {
+    background-color: #9E3DFF;
+}

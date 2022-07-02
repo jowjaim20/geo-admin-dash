@@ -1,0 +1,23 @@
+.MuiChip-root.Mui-disabled{
+  background-color: #262838;
+  span{
+    color: #617192;
+  }
+  .MuiChip-icon {
+    color: #0A0B11;
+  }
+  .MuiChip-deleteIcon{
+    color: #0A0B11;
+  }
+}
+.MuiChip-deleteIcon:hover{
+  color: #ffff ;
+}
+
+.MuiChip-sizeSmall{
+  height: 14px;
+}
+
+.MuiChip-label {
+  color: #ffff;
+}

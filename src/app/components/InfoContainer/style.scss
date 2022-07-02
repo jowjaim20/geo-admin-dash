@@ -1,0 +1,104 @@
+.info-container {
+	position: relative;
+	background: url('../../../assets/icons/left-sidebar.png') no-repeat;
+	background-size: cover;
+	flex: 0.4;
+	box-sizing: border-box;
+	padding: 50px 70px 33px 70px;
+	max-width: 620px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-width: 620px;
+	max-width: 620px;
+	background-position: right;
+	min-height: 800px;
+	.logo {
+		max-width: 120px;
+	}
+
+	ul {
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		margin: 0;
+		padding: 25px 0 0 0;
+
+		li {
+			margin: 0 20px;
+
+			&:first-of-type {
+				margin-left: 0;
+			}
+
+			a {
+				font-size: 15px;
+				color: #fafafb;
+				text-decoration: none;
+				cursor: pointer;
+			}
+		}
+	}
+
+	h1 {
+		color: #ffffff;
+		margin: 0 0 40px 0;
+		font-weight: bold;
+		font-size: 37px;
+		line-height: 48px;
+		margin: 0;
+		padding-top: 100px;
+		position: relative;
+
+		&:after {
+			content: '';
+			height: 3px;
+			width: 78px;
+			position: absolute;
+			bottom: -23px;
+			left: 0;
+			background: rgba(255, 255, 255, 0.7);
+		}
+	}
+
+	h2 {
+		font-weight: normal;
+		margin: 36px 0 57px 0;
+		font-size: 30px;
+		line-height: 38px;
+		color: #fff1f1;
+	}
+}
+
+@media screen and (max-width: 1250px) {
+	.info-container {
+		padding: 30px;
+		min-width: 420px;
+
+		h1 {
+			font-size: 29px;
+			line-height: 35px;
+		}
+
+		h2 {
+			font-size: 22px;
+			line-height: 26px;
+		}
+
+		.geo-checked-item label {
+			font-size: 17px;
+			line-height: 17px;
+		}
+
+		ul li {
+			margin: 0 15px;
+		}
+	}
+}
+
+@media screen and (max-width: 915px) {
+	.info-container {
+		display: none;
+	}
+}
